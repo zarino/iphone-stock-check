@@ -14,5 +14,7 @@
     <string>/Users/zarinozappia/repos/iphone-stock-check/stdout.log</string>
     <key>StartInterval</key>
     <integer>600</integer>
+    <key>RunAtLoad</key>
+    <true/>
 </dict>
 </plist>
