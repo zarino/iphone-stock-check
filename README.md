@@ -12,14 +12,15 @@ Replace `/Users/zarinozappia/repos/iphone-stock-check/` in `uk.co.zarino.iphones
 
 Install the plist and tell launchd to use it:
 
-    cp uk.co.zarino.iphonestockcheck.plist ~/Library/LaunchDaemons
-    launchctl load -w ~/Library/LaunchDaemons/uk.co.zarino.iphonestockcheck.plist
+    mkdir -p ~/Library/LaunchAgents/
+    cp uk.co.zarino.iphonestockcheck.plist ~/Library/LaunchAgents/
+    launchctl load -w ~/Library/LaunchAgents/uk.co.zarino.iphonestockcheck.plist
 
 Check it’s installed:
 
-    launchctl list
+    launchctl list | grep zarino
 
 ## Uninstallation
 
-    launchctl unload -w ~/Library/LaunchDaemons/uk.co.zarino.iphonestockcheck.plist
-    rm ~/Library/LaunchDaemons/uk.co.zarino.iphonestockcheck.plist
+    launchctl unload -w ~/Library/LaunchAgents/uk.co.zarino.iphonestockcheck.plist
+    rm ~/Library/LaunchAgents/uk.co.zarino.iphonestockcheck.plist
