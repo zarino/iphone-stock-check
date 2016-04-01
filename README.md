@@ -4,6 +4,10 @@ Searches for iPhone SE (Space Grey, 64GB) stock availability at Liverpool ONE Ap
 
 ## Installation
 
+Install [`jq`](https://stedolan.github.io/jq/):
+
+    brew install jq
+
 Create a file containing the email address at which you’d like receive notifications:
 
     echo "mail@example.com" > email.txt
