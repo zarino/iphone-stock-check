@@ -16,5 +16,7 @@
     <integer>600</integer>
     <key>RunAtLoad</key>
     <true/>
+    <key>AbandonProcessGroup</key>
+    <true/>
 </dict>
 </plist>
